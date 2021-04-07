@@ -1,0 +1,86 @@
+
+.header {
+    // background-image: url("~image/5fff15448a0661610552644.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .image{
+        background: white;
+        width: 190px;
+        padding: 0px 27px;
+        padding-top: 32px;
+        border-bottom-right-radius: 6px;
+        padding-bottom: 12px;
+        border-bottom-left-radius: 6px;
+        z-index: 9;
+        img{
+            max-width: 100%;
+        }
+    }
+    .cloud{
+        opacity: 0.5;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        img{
+            max-width: 100%;
+        }
+    }
+    #cloud1{
+        z-index: 1;
+        position: absolute;
+        top: -40px;
+        left: -100px;
+      }
+    #cloud2 {
+        z-index: 2;
+        position: absolute;
+        top: 180px;
+        left: 800px;
+      }
+    #cloud3 {
+        z-index: 3;
+        position: absolute;
+        top: -60px;
+        left: 543px;
+      }
+    #cloud4 {
+        z-index: 4;
+        position: absolute;
+        top:250px;
+        left: 64px;
+    }
+    .headera{
+        .k {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 50%;
+            bottom: 40px;
+            background-size: cover;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjkzLjc1MSA0NTUuODY4Yy0yMC4xODEgMjAuMTc5LTUzLjE2NSAxOS45MTMtNzMuNjczLS41OTUtMjAuNTA4LTIwLjUwOC0yMC43NzMtNTMuNDkzLS41OTQtNzMuNjcybDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzggNTMuMTY0LTE5LjkxMyA3My42NzIuNTk1IDIwLjUwOCAyMC41MDkgMjAuNzcyIDUzLjQ5Mi41OTUgNzMuNjcxTDI5My43NTEgNDU1Ljg2OHoiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjIwLjI0OSA0NTUuODY4YzIwLjE4IDIwLjE3OSA1My4xNjQgMTkuOTEzIDczLjY3Mi0uNTk1IDIwLjUwOS0yMC41MDggMjAuNzc0LTUzLjQ5My41OTYtNzMuNjcybC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLjU5NS0yMC41MDggMjAuNTA5LTIwLjc3MiA1My40OTItLjU5NSA3My42NzFsMTg5Ljk5OCAxOTAuMDAxeiIvPjwvc3ZnPg==");
+        }
+        .k:first-child{
+            opacity: 0.3;
+        }
+        .k:last-child {
+            bottom: 25px;
+        }
+        .pulse:not(:last-child){
+            opacity: 1;
+            animation-delay: .3s;
+        }
+        .pulse {
+            opacity: 0.3;
+            animation: rem 2s infinite;
+            animation-delay: .3s;
+        }
+        @keyframes rem {
+            0%  { opacity: 1;   }
+          90% { opacity: 0.3; }
+        }
+    }
+  }
